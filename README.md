@@ -1,8 +1,18 @@
-# React + Vite
+# 🔄 Theme Switcher App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React app allows users to toggle between light and dark themes effortlessly! With a clean interface and easy navigation, users can enjoy a visually appealing experience while seamlessly switching themes. Perfect for learning how to implement the Context API and global state management in React!
 
-Currently, two official plugins are available:
+## 🔑 Key Features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Easy theme toggling between light and dark modes 🌞🌜
+- Context API for state management 📦
+- Responsive design for an optimal user experience 📱💻
+
+## 🚀 Technologies Used:
+- React
+- Vite
+- Context API
+- CSS
+
+## Hosted Website 🌐
+You can view the live site at: 
