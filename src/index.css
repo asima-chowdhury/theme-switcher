@@ -1,0 +1,17 @@
+body.light {
+  background-color: #ffffff;
+  color: #333;
+}
+
+body.dark {
+  background-color: #333;
+  color: #ffffff;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
