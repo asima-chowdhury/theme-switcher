@@ -1,18 +1,16 @@
-import HomeBanner from "./components/HomeBanner";
-import Navbar from "./components/Navbar";
-import ThemeSwitcher from "./components/ThemeSwitcher";
-import { ThemeProvider } from "./context/ThemeContext";
-import "./index.css";
+import { useState } from "react";
+import MyComponent from "./components/MyComponent.jsx";
+import { MyContext } from "./context/MyContext.js";
 
 function App() {
+  const [text, setText] = useState("");
+
   return (
-    <ThemeProvider>
-      <div className="App">
-        <Navbar />
-        <HomeBanner />
-        <ThemeSwitcher />
-      </div>
-    </ThemeProvider>
+    <div>
+      <MyContext.Provider value={{ text, setText }}>
+        <MyComponent />
+      </MyContext.Provider>
+    </div>
   );
 }
 
