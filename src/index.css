@@ -15,3 +15,31 @@ button {
   border: none;
   border-radius: 5px;
 }
+
+/* Navbar Styles */
+.navbar {
+  background-color: #282c34;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+/* Home Banner Styles */
+.home-banner{
+  text-align: center;
+}
+.App {
+  padding: 2rem;
+}

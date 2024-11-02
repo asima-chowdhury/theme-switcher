@@ -1,27 +1,17 @@
-import { useEffect } from 'react';
-import { ThemeProvider, useTheme } from './context/ThemeContext';
-import ThemeSwitcher from './components/ThemeSwitcher';
-import './index.css';
-
-function AppContent() {
-  const { theme } = useTheme();
-
-  useEffect(() => {
-    document.body.className = theme; // Apply theme to body
-  }, [theme]);
-
-  return (
-    <div className="App">
-      <h1>Theme Switcher App</h1>
-      <ThemeSwitcher />
-    </div>
-  );
-}
+import HomeBanner from "./components/HomeBanner";
+import Navbar from "./components/Navbar";
+import ThemeSwitcher from "./components/ThemeSwitcher";
+import { ThemeProvider } from "./context/ThemeContext";
+import "./index.css";
 
 function App() {
   return (
     <ThemeProvider>
-      <AppContent />
+      <div className="App">
+        <Navbar />
+        <HomeBanner />
+        <ThemeSwitcher />
+      </div>
     </ThemeProvider>
   );
 }

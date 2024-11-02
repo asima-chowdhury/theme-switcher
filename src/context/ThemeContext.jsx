@@ -1,5 +1,5 @@
 // src/context/ThemeContext.jsx
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 // 1️⃣ Create a Context
 const ThemeContext = createContext();
@@ -10,6 +10,10 @@ export const useTheme = () => useContext(ThemeContext);
 // 3️⃣ Define the provider component
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light"); // Default theme is light
+
+  useEffect(() => {
+    document.body.className = theme; // Apply theme to body
+  }, [theme]);
 
   // Toggle function to switch themes
   const toggleTheme = () => {
